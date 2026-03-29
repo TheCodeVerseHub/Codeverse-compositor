@@ -1,0 +1,35 @@
+# Code owners for Codeverse-compositor
+#
+# IMPORTANT:
+# - GitHub uses team *slugs* in the form: @ORG/team-slug
+# - If your team slugs differ from the guesses below, update them.
+#
+# Guessed org/team slugs (edit if needed):
+# - @TheCodeVerseHub/compositor-maintainers
+# - @TheCodeVerseHub/compositor-contributors
+# - @TheCodeVerseHub/documentation
+# - @TheCodeVerseHub/security
+
+# Default owners for everything
+* @TheCodeVerseHub/compositor-maintainers
+
+# Documentation
+README.md @TheCodeVerseHub/documentation @TheCodeVerseHub/compositor-maintainers
+CONTRIBUTING.md @TheCodeVerseHub/documentation @TheCodeVerseHub/compositor-maintainers
+SECURITY.md @TheCodeVerseHub/security @TheCodeVerseHub/compositor-maintainers
+LICENSE @TheCodeVerseHub/compositor-maintainers
+config/** @TheCodeVerseHub/documentation @TheCodeVerseHub/compositor-maintainers
+
+# CI / GitHub configuration
+.github/** @TheCodeVerseHub/compositor-maintainers
+
+# Core Rust workspace
+Cargo.toml @TheCodeVerseHub/compositor-maintainers
+crates/** @TheCodeVerseHub/compositor-contributors @TheCodeVerseHub/compositor-maintainers
+
+# Backend / platform-specific code tends to be sensitive
+crates/codeverse-compositor/src/backend/** @TheCodeVerseHub/compositor-maintainers
+
+# Scripts + VM test harness
+scripts/** @TheCodeVerseHub/compositor-maintainers
+qemu-test/** @TheCodeVerseHub/compositor-maintainers

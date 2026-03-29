@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a problem with CodeVerse Compositor
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Security issues: please do NOT file a public issue. See SECURITY.md.
+
+  - type: dropdown
+    id: backend
+    attributes:
+      label: Backend
+      description: Which backend were you running?
+      options:
+        - Winit (nested, inside an existing desktop session)
+        - DRM (TTY / direct session)
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: distro
+    attributes:
+      label: Distro
+      description: e.g. Fedora 40, Arch, Ubuntu 24.04
+      placeholder: "Fedora 40"
+    validations:
+      required: true
+
+  - type: input
+    id: kernel
+    attributes:
+      label: Kernel version
+      description: Output of `uname -r`
+      placeholder: "6.x.y"
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal steps if possible.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant output (try `RUST_LOG=debug` and `RUST_BACKTRACE=1`).
+      render: shell
+    validations:
+      required: false
