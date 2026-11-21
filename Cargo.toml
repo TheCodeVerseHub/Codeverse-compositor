@@ -35,7 +35,7 @@ smithay = { git = "https://github.com/Smithay/smithay", rev = "9ccbd35f51842934f
 smithay-drm-extras = { git = "https://github.com/Smithay/smithay", rev = "9ccbd35f51842934f22b5a85ca0e3be1b99b27f" }
 
 # Event loop
-calloop = { version = "0.13", features = ["signals"] }
+calloop = { version = "0.14", features = ["signals"] }
 
 # Wayland
 wayland-server = "0.31"
