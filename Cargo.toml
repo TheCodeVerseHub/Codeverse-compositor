@@ -76,7 +76,7 @@ euclid = "0.22"
 
 # DRM/KMS (for production TTY backend)
 gbm = "0.15"
-drm = "0.12"
+drm = "0.15"
 libseat = "0.2"
 input = "0.9"
 
