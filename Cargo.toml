@@ -50,7 +50,7 @@ xkbcommon = "0.9"
 # Configuration
 serde = { version = "1", features = ["derive"] }
 toml = "0.8"
-dirs = "5"
+dirs = "7"
 
 # Fuzzy finder
 nucleo = "0.5"
