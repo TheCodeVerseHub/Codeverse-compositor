@@ -45,7 +45,7 @@ wayland-protocols = { version = "0.32", features = ["server", "unstable"] }
 glow = "0.13"
 
 # Input
-xkbcommon = "0.7"
+xkbcommon = "0.9"
 
 # Configuration
 serde = { version = "1", features = ["derive"] }
