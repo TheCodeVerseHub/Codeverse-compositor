@@ -75,7 +75,7 @@ indexmap = "2.0"
 euclid = "0.22"
 
 # DRM/KMS (for production TTY backend)
-gbm = "0.15"
+gbm = "0.18"
 drm = "0.15"
 libseat = "0.2"
 input = "0.9"
