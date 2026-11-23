@@ -78,7 +78,7 @@ euclid = "0.22"
 gbm = "0.15"
 drm = "0.15"
 libseat = "0.2"
-input = "0.9"
+input = "0.10"
 
 # IPC
 serde_json = "1"
