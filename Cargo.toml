@@ -57,7 +57,7 @@ nucleo = "0.5"
 nucleo-matcher = "0.3"
 
 # Desktop file parsing
-freedesktop-desktop-entry = "0.7"
+freedesktop-desktop-entry = "0.8"
 
 # Error handling
 anyhow = "1"
