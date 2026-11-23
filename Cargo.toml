@@ -49,7 +49,7 @@ xkbcommon = "0.9"
 
 # Configuration
 serde = { version = "1", features = ["derive"] }
-toml = "0.8"
+toml = "1.2"
 dirs = "7"
 
 # Fuzzy finder
